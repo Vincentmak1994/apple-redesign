@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "node index.js"
   },
   "dependencies": {
     "@babel/runtime": "^7.20.1",
