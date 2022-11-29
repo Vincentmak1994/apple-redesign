@@ -2,7 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import Stripe from "stripe";
 
-const stripe: Stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const stripe: Stripe = require("stripe")(`${process.env.STRIPE_SECRET_KEY}`);
 
 export default async function handler(
   req: NextApiRequest,
@@ -16,3 +16,4 @@ export default async function handler(
     session,
   });
 }
+
